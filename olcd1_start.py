@@ -66,7 +66,7 @@
 # year=weekly*52
 # overall=year*10
 # print(name,"will have $"+str(overall),"from p1 to sec 4")
-
+##(nice)
 ##--------------------------calculate length of a persons full name thing
 # fname=input("what is ur first name? ")
 # lname=input("what is ur last name? ")
@@ -89,7 +89,12 @@
         
 # print(randoms)    
 
-##------------------------------------------------------------------------
-#2024-11-18 from this line above
+
+##-------------------------------12 times table for the input number thing   
+# num=int(input("what is the number u want to multiply "))
+# for i in range(1,13):
+#     answer=num*i
+#     print(num,"x",i,"=",answer)    
     
-   
+
+##------------------------------------------------------------------------
