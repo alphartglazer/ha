@@ -262,29 +262,99 @@ and the program allows the user to view the scores or add a new score.
 
 
 ##question thing
-shop_price={'hamburger':7.50,'pasta':15,'pizza':25,'food':20}
-wallet=100
-bill=0
-while True:
-    item=input("what do u want to eat, type finish to finish: ")
-    if item in shop_price:
-        print("we have this food in the menu, added $",shop_price[item],"to bill")
+# shop_price={'hamburger':7.50,'pasta':15,'pizza':25,'food':20}
+# wallet=100
+# bill=0
+# while True:
+#     item=input("what do u want to eat, type finish to finish: ")
+#     if item in shop_price:
+#         print("we have this food in the menu, added $",shop_price[item],"to bill")
         
-        bill=bill+shop_price[item]
-        print("total amount payable: $",bill)
-    elif item=="finish":
-        wallet=wallet-bill
-        if wallet<0:
-            print("you dont have enough money")
-            wallet=wallet+bill
-            break
-        elif bill==0:
-            print("u never ordered anything but ok")
-            break
-        else:
-            print("okay deducted")
-            print("amount left in wallet: $",wallet)
-            break
-    else:
-        print("we dont have it in the menu")
+#         bill=bill+shop_price[item]
+#         print("total amount payable: $",bill)
+#     elif item=="finish":
+#         wallet=wallet-bill
+#         if wallet<0:
+#             print("you dont have enough money")
+#             wallet=wallet+bill
+#             break
+#         elif bill==0:
+#             print("u never ordered anything but ok")
+#             break
+#         else:
+#             print("okay deducted")
+#             print("amount left in wallet: $",wallet)
+#             break
+#     else:
+#         print("we dont have it in the menu")
+
+import random
+words = [
+    "python", "computer", "education", "coding", "programming", 
+    "algorithm", "debugging", "variable", "function", "software",
+    "hardware", "keyboard", "internet", "database", "network", 
+    "browser", "website", "developer", "compiler", "iteration", 
+    "condition", "looping", "syntax", "recursion", "automation", 
+    "simulation", "encryption", "framework", "datascience", "interface"
+]
+# # choose a word randomly
+# word=random.choice(words)
+# print(word)
+# #split this into characters in a list
+# charlist=list(word)
+
+
+
+# # shuffle the items in a list
+# random.shuffle(charlist)
+# print(charlist) #after shuffle
+# # put the list back into a string
+# shuffled=""
+# for c in charlist:
+#     shuffled=shuffled+c
+# chances=5
+# # while true
+# while True:
+#     #display the word
+#     print(shuffled)
+    
+#     # options Type 1 to scramble again, 2 to guess, 3 to give up:
+#     choice=input("Type 1 to scramble again, 2 to guess, 3 to give up: ")
+#     if chances==0:
+#         print("ran out of chances, u must guess now")
+#         choice="2"
+
+#     # if option 1
+#     if choice == "1":
+#         chances=chances-1
+        
+
+#         charlist=list(word)
+#         random.shuffle(charlist)
+#         shuffled=""
+#         for d in charlist:
+#             shuffled=shuffled+d
+#         print(shuffled)
+
+        
+        
+
+    
+#     # elif option 2
+#     elif choice == "2":
+#         guess=input("guess the word: ")
+#         if guess==word:
+#             print("correct, the word was {}".format(word))
+#             break
+#         else:
+#             print("not correct")
+    
+#     # elif option 3
+#     elif choice == "3":
+#         print("the word was: {}".format(word))
+#         break
+
+#     # # else invalid
+#     else:
+#         print("invalid input, type 1, 2 or 3 only")
     
